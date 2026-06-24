@@ -1,1 +1,23 @@
-Test Driven  Development
+package com.cognizant;
+
+public class tdd {
+
+    static class Calculator {
+        public int add(int a, int b) {
+            return a + b;
+        }
+    }
+
+    public static void main(String[] args) {
+        Calculator calculator = new Calculator();
+
+        int result = calculator.add(2, 3);
+
+        // Simple test (TDD style assertion)
+        if (result == 5) {
+            System.out.println("Test Passed!");
+        } else {
+            System.out.println("Test Failed!");
+        }
+    }
+}
